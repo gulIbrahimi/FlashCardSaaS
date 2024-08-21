@@ -3,15 +3,14 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
-    // Your web app's Firebase configuration
     const firebaseConfig = {
-    apiKey: "AIzaSyATYiR0M9S1NHhrkU-rfaOwfUYMwWCWExk",
-    authDomain: "flashcard-saas-e3486.firebaseapp.com",
-    projectId: "flashcard-saas-e3486",
-    storageBucket: "flashcard-saas-e3486.appspot.com",
-    messagingSenderId: "642221440123",
-    appId: "1:642221440123:web:ff6385690c348d6153b6de",
-    measurementId: "G-2JN2CYM03T"
+            apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+            authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+            projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+            storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+            messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+            appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+            measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
     };
 
     // Initialize Firebase
